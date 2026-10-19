@@ -1,0 +1,4 @@
+Font download status
+====================
+Could not download BBAnonymPro-Bold.ttf: <urlopen error [Errno -3] Temporary failure in name resolution>
+Could not download FFUnitRoundedPro-Regular.woff2: <urlopen error [Errno -3] Temporary failure in name resolution>

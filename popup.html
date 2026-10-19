@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volumi</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><img class="brand-logo" src="header-logo.png" alt=""><span>Volumi</span></div>
+    </header>
+
+    <section class="current">
+      <div class="tab-info">
+        <div class="favicon-wrap"><img id="favicon" alt="" hidden></div>
+        <div class="tab-copy">
+          <div id="tab-title" class="tab-title">Finding current tab…</div>
+          <div id="tab-url" class="tab-url"></div>
+        </div>
+      </div>
+      <div class="volume-row">
+        <label for="volume">Volume</label>
+        <div class="value"><span id="volume-value">100</span><span class="percent">%</span></div>
+      </div>
+      <input id="volume" type="range" min="0" max="200" value="100" step="1" aria-label="Tab volume">
+      <div id="range-labels" class="range-labels"><span>0</span><span>100</span><span>200</span></div>
+      <div class="advanced-options" aria-label="Volume options">
+        <label class="option"><input id="max-volume-toggle" type="checkbox"><span class="switch" aria-hidden="true"></span><span class="option-copy"><strong>Extended volume</strong><small>Raise the limit to 1000%</small></span></label>
+        <label class="option"><input id="decimal-toggle" type="checkbox"><span class="switch" aria-hidden="true"></span><span class="option-copy"><strong>Decimal volume</strong><small>Adjust in 0.01% steps</small></span></label>
+      </div>
+      <div class="actions">
+        <button id="reset" class="reset" type="button">Reset to 100</button>
+        <span id="status" role="status" aria-live="polite"></span>
+      </div>
+    </section>
+
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
